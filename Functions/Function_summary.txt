@@ -1,0 +1,142 @@
+Functions
+---------
+- Functions is defined as a block or a group of instructions to perform a specific task.
+- Functions enhances the code efficiency and clarity by reducing code repetition and enabling code reuse.
+- This are executed by the compiler when this are called only.
+- There are two type of functions 
+        - built-in functions:- The function are predefined where we can readily use this. 
+                ex:  len(), max() 
+        - User defined Functions:- This are the functions which are created/defined by the user to perform specific task.
+    
+Function declaration 
+-------------------
+- We define a function using def keyword followed by the function name and parameters.
+     syntax:   def fun_name:
+                    code block
+    
+Function with parameters
+-----------------------
+- Parameters are the variables declared inside the function declaration. There acts as a placeholders to the values passed during the
+function call.
+
+ 
+    Syntax:     def fun_name(par1,par2):
+                    code block  
+                
+                fun_name(2,3)
+
+Function Arguments 
+------------------
+- The value passed during the function call is know as arguments.
+- There are different kind of arguments in python
+    - Positional Arguments: - This are the common type of arguments where the argument value is based on the position.
+        ex:  def fun_name(par1,par2):
+                        code block
+             fun_name(1,2)
+    
+    - Keyword Arguments:- These are the parameters which are passed in the function call by specifying the parameter name.
+        ex:  def fun_name(par1,par2):
+                    code block
+            
+            fun_name(par1=1,par2=2)
+    - default arguments:- This are the argument in the function declaration having a default value. There may or may not passed during 
+                          function call.
+
+        ex: def fun(par1,par2,par3=4):
+                    code block
+            fun(par2=1,par1=2)
+
+    - variable length arguments: - In python variable length arguments refers to a feature that allows a function to accept a variable 
+                                    number of arguments.
+        
+            - There are two types.
+            - *args(Non-keyword Arbitrary Argument):-It is used to pass a variable length, non keyword argument list. These argument are
+                                collected as a tuple.
+                        ex:  def fun(*val):
+                                    print(val)
+                            fun(1,2,3,4)
+
+                            output:  1,2,3,4 are stored as tuple the output is (1,2,3,4)
+
+                            def fun(*val):
+                                for i in val:
+                                print(i,end=" ")
+                            fun(1,2,3,4)
+
+                            output:   1 2 3 4
+
+
+                Note: the "*" is know as packing operator.
+
+            - **kargs(Keyword Arbitrary Arguments):- It is used to pass a variable length of keyword arguments. where it stored as a dictionary.
+                        ex: def fun(**values):
+
+                                print(values["name"])
+                                print(values["age"])
+                            
+                            fun(name="ajk",age=23)
+                        
+                Note: if we want to set a default value or check whether the keyword in the argument we can use dictionary method 
+                        .setdefault()
+
+                        values.setdefault("height",6)
+                                            --> if height is present i wont change the value if not it create height argument and assign value 6
+
+
+            Note : "**" used for dictionary.
+
+Anonymous Functions
+------------------
+- Anonymous functions means a function with out a name. To create we use lambda keyword.
+- It is also called as lambda function. and we can pass any number of argument to it.
+
+    Syntax:   lambda argument: expression
+    ex:       sum=lambda a,b:a+b
+              print(sum(2,3)) --> 5 output
+
+    - we can use lambda function with iterables like (filter, map, reduce), comprehension, if else. 
+
+    Note: we can make use of lambda function when we want send a function as an argument to another function.
+
+Recursive functions
+-------------------
+- Recursion is a process in which a function calls itself.
+- In this function there are two parts.
+        - Basic case:- It is a termination condition for the recursion.
+        - General case:- It is executed when the base is not satisfied.
+    ex:  def fun(par1):
+                if par==1:  #base case
+                    return 1
+                else:       # general case
+                    fun(par1-1)    
+    
+    There are two types of recursion
+    - Direct recursion:- when a function calls itself directly. Based on the place of function call this are divided into two types.
+                    - tail recursion:- if the recursive call is the last statement to be executed. 
+                    ex:  def fun(par1):
+                            if par1==0:
+                                return 1
+                            else:
+                                return par1*fun(par1-1)
+                    - head recursion:- in the recursive function if the last statement is not the recursive call then it is a head recursion.
+                            ex:     def fun(par1):
+                                        if par1>0:
+                                            fun(par1-1)
+                                            print(par1)
+                                    
+    - Indirect recursion:- In this type of recursion the "function A" is called inside the "function B" and "fun B" is called inside "fun A"
+        
+
+Scope of the Variable
+--------------------
+- The extent of the area or subject matter that something deals with or to which it is relevant.
+- A scop is a textual region in python programming where a a namespace is directly accessible.
+Types of scopes 
+---------------
+- There are four types of scopes LEGB--> local, enclosed, global, built-in.
+- LEGB rule defines the order of the scop in which the interpreter looks for retrieving variable name and value.
+- Enclosed also referred as non-local scope.
+
+
+
+

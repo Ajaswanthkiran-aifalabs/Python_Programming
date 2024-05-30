@@ -1,0 +1,67 @@
+is operator
+-----------
+- It is a identity operator where it is used to check whether two variables are pointing to same memory location or not.
+
+        note: read the comments in the code
+
+Shallow and Deep Copies
+-----------------------
+
+- we can copy the one list in other using .copy().
+- But when it is a two dimensional list then it creates a shallow copy means.
+
+    ex:   lst=[1,2,4]
+          lst_cpy=lst.copy()
+
+          #lst_cpy is now not a pointer to lst if any changes in lst_cpy won't effect lst.
+
+          # but if 2-d list is given 
+
+          lst=[1,2,[1,2,4]]  # when .copy() is used i create a copy of 1,2,[1,2,4] for memory it point [1,2,4] as same 
+
+          lst_cpy=lst.copy()
+
+          lst_cpy[2][0]=6 # Now in the original array also i will reflect.
+
+    --> The above is the example of shallow copy 
+
+- we can use deepcopy from copy where the copy element does not pointer to the original element.
+
+    ex: from copy import deepcopy
+
+        lst=[1,2,4,5]
+        lst_cpy=deepcopy(lst)
+
+Tuple unpacking & packing 
+-------------------------
+    unpacking
+    ---------
+    - we have a tuple with t=("Ajk",20) now we want to assign "ajk" to name and 20 to age we can use tuple unpacking
+
+        ex: name,age=("AJK",20)
+
+            #name="AJK"
+            #age=20
+        
+    packing
+    -------
+    
+Dictionary unpacking
+-------------------
+- We can use dictionary unpacking using **dict_name.
+- example code in the folder
+
+
+walrus operator
+--------------
+- It is introduced in python 3.8.
+- It do two tasks at a time first assigning a value to a variable and returning the value of a variable.
+    syntax:   ":="
+
+    - It is useful when we use a value multiple time in loops because we no need to calculate repeatedly.
+     
+
+
+
+
+

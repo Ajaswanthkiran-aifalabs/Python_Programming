@@ -1,0 +1,73 @@
+Slashes in String
+-----------------
+- Slash is used as a escape a character in string.  
+        ex:   print("Jonn"s Book") --> raise an error 
+              print("Jonn\"s Book") --> print Jonn's Book
+- we also use slash to create some slash quotes like  "\n".
+        - '\t' for tab space 
+- If we don't wont any slash quotes in our string we convert it into raw string. to convert just place "r" at the beginning of the string
+        ex:     print("c:\user\newfolder")--> \n is taken as a new line 
+                print(r"c:\user\newfolder")--> now the path will recognize as a path.
+
+
+String Formatting
+-----------------
+- string formatting also know as string interpolation.
+- If the user want to display the output prettier and more attractive. 
+- String formatting is a way to insert a variable or another string in a predefined string.
+- There are many ways to formate a string.
+    - Formate specifier like (%d,%ld)
+    - .format() method
+    - using formatted literal (f-strings)
+    - Manual 
+
+Percentage string substitution (%) --> Formate specifier
+-------------------------------------------------------
+- % operator is used for formatting the string.
+- It is the old way of formatting string and many programming languages like c,java uses.
+    - String      - %s
+    - Single char - %c
+    - float       - %f
+    - integer     - %d
+    - exponential - %e 
+
+.format() method 
+----------------
+- .formate() method formate the specified value and insert them inside the placeholder.
+- The placeholder is a {} inside the string.
+
+        syntax:   print("name: {0} \nAge: {1}".format(name,age)) --> positional arguments 
+- The .format() method can take any number of arguments.
+- we can also give keyword arguments 
+            ex:  print("name: {name}\nAge: {age}".format(age=age,name=name))
+
+f-String
+-------
+- f-string allows to formate selected part of a string.
+- to convert a string into f-string just need put a f in front of the string literal.
+- to formate a string we add a placeholder {}, a placeholder can contain variable, function or modifiers
+        ex: name="ajk"
+            age=23
+            print(f"name: {name}\nage: {age})    
+
+- in f-string we can directly insert the data using the variable name.
+
+- A placeholder can include a modifier we add a modifier by using a "{:}"
+- There are many modifiers like ":<", ":>" - left align and right align. 
+                              - ":^" - center align.
+                              - "%" to convert the number into percentage. print(f"The number {0.25:%}") --> 25.00000% or {0.25:.0%} 
+                                                                                                                    just 25% as output.
+                              - there are many more modifiers.  
+        ex: print(f"The value: {95:.2f}") --> output will be 95.00
+    
+- In f-string we can perform operation, we can use if-else and execute functions.
+
+- we also we equal("=") formate specifier  using this we can print variable name followed by the value.
+                ex:     count=5
+                        print(f"the value of count is : {count}") --> output is "the value of the count is 
+                        using "="  we can change to print(f"{count=}") --> It will display with keyword name like "count=5".
+                - It also work with the expression like if {count+1= } then it will display 6 
+
+-       a=10000 
+        print(f"{a:,}")--> output  10,000  used for separating the decimal values 
+- Text Alignment formate specifier

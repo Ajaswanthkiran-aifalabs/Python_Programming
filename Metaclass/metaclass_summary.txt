@@ -1,0 +1,8 @@
+
+
+what happens when we create a class and a object?
+- type() was responsible for creating class and objects .
+
+
+- we can create have user defined meta class also.
+

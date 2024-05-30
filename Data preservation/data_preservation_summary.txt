@@ -1,0 +1,17 @@
+
+
+- In python the data that we store in variable,dictionary etc is temp when we exit from the current program execution we will lose the data.
+- We can store data either in cloud or locally.
+
+JSON File  (JavaScript object Notation)
+----------
+- It is the popular file for storing data.
+- It is normal text which similar to dictionary in python that stores data in key-value pair.
+
+        example:    import json
+
+                    with open("file.json") as f:
+                            dct=json.load(f) 
+
+                    with open("file.json") as f:
+                            json.dump(dct,f) #to write the data into the json filee

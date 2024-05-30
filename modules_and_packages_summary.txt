@@ -1,0 +1,42 @@
+
+Modules 
+------
+- Module in python can be defined as a file that contains python definition and statements. It contains python code along with function,
+    class and variables. python modules are the files with .py extension. 
+- There are some uses of Modules like reusability, organizing the code.
+- To import one python file in to other we use "import" keyword.
+- The import statement is used to load all the functionality of one module to another.
+
+        ex:     import example
+                
+                example.fun()   --> In example.py file fun() method is called
+
+        we also import as 
+            
+                from example import fun
+
+                fun()
+    
+- There are two types of python modules 
+1. Built-in modules :-  math,os, sys......etc
+2. user defined:- our own files and methods 
+
+
+
+Packages
+--------
+- Packages do the work of organizing the files in python. Physically a package is a folder contains sub-folders are modules(files).
+- When user created a directory and store some modules in it and if the directory should to accessed by other modules we need to convert
+that directory into a package. To convert we use __init__.py file.  it identify the folder as package.
+
+- user can import the Packages same as modules.
+
+- A package contains modules and sub package. 
+
+        ex:     form package import module1,module2
+
+                module1.fun1()
+
+
+    
+

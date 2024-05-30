@@ -1,0 +1,20 @@
+
+comprehension
+-------------
+- Comprehension in python provides a concise and expressive way of creating a list,dictionary and set. There allows to create this data 
+    structures in a single line of code.
+
+- There are four types of comprehensions in python
+        - list
+            Syntax:   lst=[<output_expression> for <item> in <iterable> if <condition> ]
+        - Set
+            Syntax: s={ <output_expression> for <item> in <iterable> if <condition>}
+        - dictionary
+            Syntax:  dt={ key:value for (key,value) in iterable if <condition> }
+        - Generator:- It is very similar to the list but the only diff is it used circular brackets and major diff is it does not 
+                    allocate memory for the whole list. instead there generate each value one by one. 
+            Syntax: gen=( <expression> for <item> in <iterable> if <condition>)
+
+
+
+    

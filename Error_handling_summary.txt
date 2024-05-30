@@ -1,0 +1,29 @@
+Error handling or Exception handling 
+------------------------------------
+- Exception are erros that are detected during the program execution. When ever there is a  error in the programming, exception are raised.
+- When a exception is raised it disrupts the normal flow of execution and can lead to halt state or even crash. 
+- To handle the exception in python we use try & except block.
+    - The try block is used for enclosing the code that may raise an exception.
+    - The catch block is used to handle the exception.
+
+        syntax:  try:
+                    code block
+                 except Exception:
+                    code to handle the exception
+- There are some common inbuilt exceptions which are inherited from the Exception class 
+    - Exception, ArithmeticError, ZeroDivisionError, OverFlowError, AssertionError.....etc are some more exceptions. 
+
+
+- User can raise a Custom predefined exception can be thrown manually by raising it for a specific condition.
+ - we use "raise" keyword to raise a custom exception.
+
+        syntax:     def fun():
+
+                        try:
+                            raise SomeException("Error!)
+
+                        catch SomeException as e:
+                            print(e)
+            
+        - user defined exception class should be created.
+        

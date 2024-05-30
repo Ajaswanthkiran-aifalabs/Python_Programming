@@ -1,0 +1,120 @@
+Arrays
+------
+- To create a empty list,tuple,set or dictionary.
+    - lst=[]
+    - tuple=()
+    - set={} --> if we print type of the set it wil show as dict so to create a empty set we use set() method.
+    - dict={} 
+- To create a single element list,set or dictionary we can normally assign but for the tuple.
+            - tuple=(10)  --> python will consider it as an int to make it tuple  tuple=(10,)
+    
+
+Step in Slice
+-------------
+- Slice in used for getting a particular range of characters.
+    - Syntax:  [start:stop:step]
+    - The step is used for each increment it goes up.
+        ex: lst=[0,1,2,3,4,5,6]
+            print(lst[0:7]) --> print all 
+            #if i want only even numbers increase by two can get the list
+            print(lst[::2])--> 0,2,4,6
+
+.sort(key)
+---------
+- sort() method is used to sort the list in ascending order.
+- In sort method there is parameter "key" is used for sorting based on different conditions.
+- If we want to sort a list of strings based on length we can use lst.sort(key=len)
+- we can write a function for sorting and call it lst.sort(key=fun)
+- There is another parameter "reverse" if it set to true the list sorted in descending order.
+- we can also sort list of tuple based on the specific element.
+
+        Syntax: .sort(key=..,reverse=True/False)
+    
+
+Sequence Data Types
+-------------------
+
+    The array Datatype
+    ------------------
+    - Array is a collection of similar data types under same name.
+    - The Array are dynamic. where we can use append() to add or remove() to delete.
+    - In python we can create a array using array class.
+    - In python we can only create a array of numbers either int or float.
+            
+            form array import array
+
+            num=array(data_type="i"/"f",(element))
+
+            ex:  num=array("i",(1,2,4,35,53))--> "i" for integer, "f"--> for float
+
+    - All the operation like index and slicing can be performed.
+
+    - It is mutable     
+    - using Array we can perform operation FASTER compare to the list.
+
+
+    Stack Data Structure 
+    --------------------
+    - Stack is a linear data structure with store the data in LIFO manner. 
+    - In stack a new element is added at the top and we can only delete the top element. In stack we can only access top element.
+    - The operations in the stack are.
+            -  push() :-  to insert a element at top of the stack. - O(1)
+            - pop()   :-  to remove top element of the stack. - O(1)
+            - empty() :-  to check whether the stack is empty -- O(1)
+            - size()  :- to return the size of the stack. - O(1)
+            - top()/peek() :- to return the top element of the stack. - O(1)
+    - There are different way to implement stack 
+        1. list
+        2. collection.deque
+        3. queue.LifoQueue
+    
+    2. collection.deque is class using this we can perform stack operation but is not completely for stack in this we can perform all the
+         list operation.
+        - There some operation
+            - append():- add a element at the last 
+            - appendleft():-  add's a element at the start of the list.
+            - pop(): - to remove last element.
+            - popleft(): - to remove top element 
+        - using this we can perform operation on the both end.
+
+    - If we a strict Stack data structure implementation.
+
+    3. queue.LifoQueue has LIFO queue which is basically a stack. Data is inserted into the queue using put() function and get() 
+        takes the data out.
+        - the various function available inside the LifoQueue 
+                    - empty():- True if empty.
+                    - maxsize:-  number of item allowed inside the queue.
+                    - full():- Return true if there are maxsize items in the queue. If maxsize=0 then  full never returns true.
+                    - put_nowait():- if no free space then it will raise a error QueueFull where is in put() i wait until the queue has
+                        space.
+                    - get_nowait():- 
+                    - qsize():- returns the number of items in the queue.
+                
+    
+    Queue
+    -----
+    - It also a linear data structure which insert the data based on FIFO. First in First out.
+    - In queue the least recently added data wil be removed. 
+    - The operation in the queue are.
+        - Enqueue   :- To insert an element at the last.
+        - Dequeue   :- To delete an element from the first
+        - Front     :- To return the first element in the queue
+        - Rear      :- To get the last element in the queue.
+    - To implement queue in python 
+        - list
+        - collection.deque 
+        - queue.Queue --> same as stack LifoQueue
+    Collection Module
+    ----------------
+    - Here in this Module we have different data structure.
+      like - Counter: It gives the dictionary of the frequency of the elements.
+           - OrderedDict:- It store in the order in which the keys are entered.
+           - DefaultDict:-  It is used for providing default value to the dict.
+           ...etc and there are still some more 
+        
+    
+
+
+
+
+    

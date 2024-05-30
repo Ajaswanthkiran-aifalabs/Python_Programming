@@ -1,0 +1,52 @@
+
+
+itertools Module
+---------------
+- It is a module which provide some function for creating and manipulating iterator. This modules are fast, memory-efficient.
+
+- There are various iterator in itertools module.
+    - infinite iterator
+    - combinatorics iterator
+    - Terminating iterator
+
+    - Infinite iterators
+      ------------------
+      - An iterator which runs infinite.
+      - There are three types of infinite iterators.
+      1. count(start,step): - It iterate from start to infinite the step value is optional.  
+      2. cycle() : It print all the value in the sequence from the passed argument. It print all the values in the cycle manner.
+      3. repeat(val,num) : It repeatedly print the passed value for infinite times. it takes two param num is optional.
+
+    - Combinatorics iterator
+      ----------------------
+      - The complex combinatorial constructs are simplified by using recursive generator. The permutation,combination, and cartesian 
+      product are the examples of the combinatorics iterators. 
+
+      - There are four types.
+        - product(): - It is calculate the cartesian product of the input iterable. It takes iterable and repeat value. the repeat value
+        is optional. It used for computing of the product of an iterable with itself. The output is return as a sorted tuple.
+        - permutation(): - It is used to generate all possible permutation of an iterable in lexicographical  order and returns thr unique
+        elements. It takes an iterable object and group_size. if the group_size is not given it takes the length of the iterable.
+        - combinations(): -  it prints all the possible combination of the iterable without replacement. It takes an iterable object and 
+        group_size. if the group_size is not given it takes the length of the iterable.
+        - combination_with_replacement(): - It is similar to the combination but it may include the individual element itself.
+        it takes iterable and group_size.
+
+    - Terminating iterator 
+      ---------------------
+      - This are generally used for working on small input sequence and generate the input based on the functionality of the method used
+      in the iterator.
+      - there are different types 
+        - accumulate(iter,func):-  It takes two arguments one is the iterable and other one is the function. If the function is not given
+        the default is addition.
+        - chain(iter1,iter2,...,itern): - It is used to print all the iterables passed in the form of chain and declare in arguments.
+        - dropwhile(func,seq): - It start printing only after the func only. It drops the elements from the iterable as long the predicted
+        is true. if it is false it start returning elements.
+        - isslice(iterable,start,stop,step)
+        - starmap(func,tuple list):- it takes two arguments a func and a list of tuples and based on the function it gives the output.
+        - takewhile():- it is vise-versa of dropwhile.
+        
+
+
+
+

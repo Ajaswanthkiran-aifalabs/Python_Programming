@@ -1,0 +1,69 @@
+
+Modules 
+------
+- Module in python can be defined as a file that contains python definition and statements. It contains python code along with function,
+    class and variables. python modules are the files with .py extension. 
+- There are some uses of Modules like reusability, organizing the code.
+- To import one python file in to other we use "import" keyword.
+- The import statement is used to load all the functionality of one module to another.
+
+        ex:     import example
+                
+                example.fun()   --> In example.py file fun() method is called
+
+        we also import as 
+            
+                from example import fun
+
+                fun()
+    
+- There are two types of python modules 
+1. Built-in modules :-  math,os, sys......etc
+2. user defined:- our own files and methods 
+
+
+
+Packages
+--------
+- Packages do the work of organizing the files in python. Physically a package is a folder contains sub-folders are modules(files).
+- When user created a directory and store some modules in it and if the directory should to accessed by other modules we need to convert
+that directory into a package. To convert we use __init__.py file.  it identify the folder as package.
+
+- user can import the Packages same as modules.
+
+- A package contains modules and sub package. 
+
+        ex:     form package import module1,module2
+
+                module1.fun1()
+
+
+    
+
+Type Hinting
+------------
+-> Function annotation   "def func() -> int:"  - it return type is int.
+
+- Type hinting is a way to specify the type of variable, function, class, method,
+- Atomic vs Composite 
+        - Atomic -- int,float,str,bool
+        - Composite -- list,tuple,set,dictionary
+- also we can create a user-defined data type and use it as type hinting.
+- And python also provide additional tools for creating a specific types, including Type and NewType.
+
+        - Generics
+        -----------
+        - When a user want to create a function,class or data which work on different data type then we can use Generics class and TypeVar
+        function.
+        best example is list which elements of different DataTypes.
+        ex:     from typing import TypeVar
+
+                T=TypeVar('T')
+
+                def func(a: List[T])-> T:
+                        return a[0]
+                
+                func([1,2,3,'a'])
+        
+        Generic is used to defined a Generic classes. 
+

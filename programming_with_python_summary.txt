@@ -1,0 +1,52 @@
+DATE:  16/5/24
+
+Python syntax and Expression
+----------------------------
+    -syntax is a set of rules which need to be followed when writing a code.
+
+    
+"#" --> comment which is not executed during the execution
+
+Data types
+----------
+    - Data Structure in generally can defined as the data which is created and stored in a structurized or organized way to perform 
+        various operations on it is called data Structure   
+    Primitive Data types
+    - integer 
+    - boolean 
+    - float
+    - complex
+
+    Non Primitive 
+    - string 
+    - directory
+    - sequence data types
+        - list
+        - tuple 
+        - set
+
+
+- Accessing the value in the directory using indexing me dic={"name":"A","age":13} now the value of the "name" can be accessed using
+    dic["name"].
+
+I/O in python 
+-------------
+
+    - To get a input form user we use input() function. 
+    - to print the output print() function is used.
+
+
+if statements
+-------------
+    - if statement is used to check the condition and execute the code if the condition is true.
+
+def keyword
+-----------
+- Function is a block of code which is used to perform a set of tasks which can be refereed by it's name and which is reusable.
+- The advantage of function is code reusability, readability and modularization. 
+- In python to create a function we use "def" keyword (keyword are the reserved word in python and it has a unique purpose).
+
+
+
+
+

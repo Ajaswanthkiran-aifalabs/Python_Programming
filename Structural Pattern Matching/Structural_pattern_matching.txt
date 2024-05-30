@@ -1,0 +1,14 @@
+pipe operator 
+------------
+- In Match case when we want to check two different value in the case we can use pipe operator('|')
+
+    ex:     match  input():
+                case 'y' | 'Y':
+                    print("Done")
+                case 'n' | 'N':
+                    print("Cancelled")
+                case cmd:
+                    print("Unknow command",cmd)
+
+Pattern Matching
+----------------

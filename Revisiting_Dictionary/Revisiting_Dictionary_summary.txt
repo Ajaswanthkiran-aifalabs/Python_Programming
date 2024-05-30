@@ -1,0 +1,42 @@
+Dictionary or Hash tables
+-------------------------
+- Dictionary is called hash tables or look up table because in memory the dictionary value with key is stored as hash. we can use hash()
+function to know the hash value.
+- if we want to create general way  dct={"Dale":3423}  we can also create using dict() method dict(Dale=342).
+
+MappingProxy Types
+------------------
+- The dictionary is mutable means we can reassign the value for the key.
+- But using MappingProxyType we can't modify the dictionary i changes to immutable.
+        ex:  from types import MappingProxyType
+             d={"name":"ajk","age":21}
+             proxy= MappingProxyType(d)
+             proxy["name"]="ajk"  # this will give error
+
+             - It is only readable not writeable.
+
+
+SimpleNamespace
+--------------
+- we access a value in dictionary using dct['key'] or dct.get("key") but to access using a ".'" operation like dct.key it not possible
+but using SimpleNamespace we can. 
+
+            from type import SimpleNamespace
+
+            d=SimpleNamespace(name="Dale",age=21)
+
+            print(d.name) 
+
+            # we can also assign 
+
+            d.weight=80
+
+
+namedtuple class
+----------------
+-It is a type of container dictionary present in the module collections 
+
+
+
+.items() method
+---------------

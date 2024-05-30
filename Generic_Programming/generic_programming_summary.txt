@@ -1,0 +1,60 @@
+
+DATE:  16/5/24
+
+computer Architecture And Data Structures 
+-----------------------------------------
+    - How a computer works like storing data in the CUP, hard disk.
+    - In CPU it contain transistors and each transistors is either 0's and 1's.In CPU there are millions and billions of transistors.
+    - Each CPU has an instruction set which is a collection of 0's and 1's.
+    - when CPU needs to store data it stores in the RAM.
+    - 0,1 are bits and a set of 8 bits are called bytes. 
+
+
+What is a Programming Language and why it is used ?
+---------------------------------------------------
+    - when a user want to give a instruction to the computer like simple add,sub,mul.. etc(ex: 6+12) the expression 6+12 can't be understand 
+        by the computer directly it need to be converted into the Machine code( The presentation of instruction as long sequence of zeros and ones).
+    - In CPU there is a instruction set in zeros and ones means '+'-> 00000111, '-': 00010011 etc the complier converts the given instruction
+        into machine code.
+    - The complier take this instruction by the user in high level language.
+    - A user can give this set of instruction using a Programming language.
+    - Many Programming language like python, java, c provide human readable keywords statements and syntax rules.
+    - code --> complier --> .exe --> output [ Here the entry code is compiled]
+    - code --> Interpreter --> output [ line by line execution]
+
+
+
+a=10
+class Exp:
+
+        def func(self)
+
+        def func()
+b= "even" if a%2==0 else "odd"
+Terminal
+--------
+    - Terminal is text-based interface used for intreating with OS through command-line interface.
+    - And there are some basic command to work on files and folders.
+        - mkdir -- to make a new folder 
+        - cd - to change the directory 
+        - .\ -- refer to cwd
+        - ls -- to list all contents in the cwd
+        - rmdir-- to remove the folder
+        - cp-- to copy the file
+        - rm -- to remove the file 
+
+
+    cat -- to display or concat content to of the file 
+    echo --- it display the content give but echo "content" > filename.txt it will store the content in the file
+             It can also create if the file is not present
+             It will overwrite the content in the file
+
+
+Internet 
+--------
+    - when there is a transfer of data between client and server is called a internet.
+    
+
+
+
+

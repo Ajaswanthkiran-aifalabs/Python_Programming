@@ -1,0 +1,285 @@
+DATE:  17/5/24
+
+Variable
+--------
+    - Variable are the reserved memory location in python to store a data. 
+    - Variable is a identifier so it has some name rules to be followed.
+    - Variable name can be any combination of letters, numbers, and underscores. But should no start with a number.
+    - To know the type of a Variable them  type(variable_name)
+    - Variable is an entity. 
+
+Data types
+----------
+- Data type define what type of data that a variable can store and determine the operations performed on the values.
+
+string
+------
+    - String is a collection of unicode characters. There can be created using a single or double quotes or triple . 
+    - String is immutable and it is also called as an entity.
+
+    String operations
+    -----------------
+    - We can perform indexing and slicing on the string.
+    indexing: indexing refers to iterating over the string or get a specific character.
+        ex: a='ajk'
+            print(a[0])  ---> ouput is 'a' 
+    
+    Slicing: It refers to getting a particular range of characters.
+        ex: a="Hello Iam Ajk" 
+            print(a[3:6])--> Output "lo Iam"
+
+    String Methods 
+    --------------
+    - .upper() --> it will convert the characters into upper characters\
+    - .lower()
+    - .isupper() ....etc
+
+Numerical DataTypes
+-------------------
+    -In python Numerical DataTypes are
+        - int
+        - float
+        - complex
+
+    operations
+    -----------
+        - Addition '+'
+        - Subtraction '-'
+        - Multiplication '*'
+        - Division '/'
+        - Floor Division '//'
+        - Mode '%' --> To get the reminder
+        - exponential '3**2" --> 3 power 2
+        - abs --> to get absolute value 
+        - max() --> passing list of number it will give the max number.
+        - min()
+        - round() --> it will round the number to floor as it takes a parameter how decimal places it should round.
+
+Boolean
+-------
+    - Boolean has only two values either True or False.
+    - In int 0-False, 1- True
+    - In float 0.0 - False
+    - In String empty string - False, else True
+
+List
+----
+    - List is a ordered collection of similar or different data types.
+    - List is mutable means we can modify the list by adding, deleting a value in the list.
+
+    ex:   a=[1,2,3,4,5]
+
+    we can create a list using list() function.
+
+    operations 
+    ----------
+    - we can access elements in list using indexing.
+    - similar to string in list we can perform both slicing and indexing.
+    - To add an element we can use .append() --> to add a element in the list
+                                   .extend() --> To add more than one element 
+                                   .insert() --> To add a element at specific location.
+
+    - To delete a element from the list we can use .remove()
+                                                   .pop()
+                                                   .clear() 
+                                                   or we can del(element)
+    - we also have different function for different task like.
+        - max() --> to get the max element in the list.
+        - min() --> to get min value
+        - .sort() --> to sort the list in ascending order.
+        - .sort(revers=True) --> to sort in descending order.
+
+Tuple
+-----
+    - Tuple is a ordered collection of different data items.
+    - Tuple is similar to list but it is immutable means we can not modify the tuple by adding, deleting a value in the tuple.
+    - similar to list for accessing a tuple we use indexing.
+    - There are some function 
+            - cmp(tuple1,tuple2) --> compares two tuples
+            - len(),max(),min(),tuple()
+
+Set
+---
+    - Set is a unordered collection different data items.
+    - In set it does not contains duplicate elements.
+    - Set is mutable but not the value inside the set means a={1,2,3} is a set i can add or del a element form the set but i can't update
+    the value 1 to 4 because it is unordered we can't use indexing.
+
+    - To add a element inside a set we use .add() function .update() function allows to add multiple elements.
+
+    - To remove there are different functions.
+        - .remove()--> remove the element form the set if not present then it will throw an error.
+        - .discard()--> It will remove the element if the element is not present it the set will remain unchanged.
+        - clear()--> To delete all the elements in the set.
+
+    Set operations 
+    --------------
+    - These can be preformed by two ways 
+    - operator 
+    - Methods
+
+    The operations in the set are
+            - union:- When two sets are given it will combine all the elements from both the sets.
+                        - '|' operator
+                        - .union() method 
+
+            - intersection:- It takes only the common elements from the two sets.
+                        - '&' operator
+                        - .intersection() method
+            
+            - symmetric difference:- It consider those elements which are not common. 
+                        - '^' operator
+                        - .symmetric_difference() method
+            
+            - difference:- It takes the element from set 1 which are not common in the set2.
+                        - '-' operator  
+                        - .difference() method
+
+Dictionary
+----------
+    - Dictionary is the most important data structure where it stores the data in the key-value pair. The key is a unique value which helps
+    to identify the data in the memory.
+    - It is a heterogenous means we can store different type of data. 
+    - It the value of the dict is mutable but not the key.
+
+    Dictionary operations
+    ---------------------
+    - To delete the element 
+            - del(dt["key"])
+            - dt.pop("key")
+    - To add a new key
+            - dt["key"]=value
+            - dt.update({"key":"value"})
+    - .has_key() --> return true if the dic has the key.
+    - .get("key",default=0)--> to get the value of key.
+    - .items()--> return all the elements in the dict.
+    - .key() --> return all the keys.
+    - .values() --> return all the values in the dict.
+
+   Note: fromkeys(key,value)
+   
+        we can use zip() function two convert two list,tuples to a dict
+            ex:   x=["a","b","c"]
+                  y=[1,2,3]
+                  dt=dict(zip(x,y))
+
+
+control flow statements
+----------------------
+- Control Flow statements are the building block of the code which dedicates the flow of the program.
+
+- There are three types of control flow statements\
+    - sequential: - Execute code form top to bottom 
+    - selection : - Change the path of execution based on the condition (if-else)
+    - repetition: - Execute same code block repeatedly based on the condition. 
+
+
+Decision Control (Selection)
+---------------------------
+    - if is the simplest decision making statement.
+        syntax:  if condition:
+                        code block
+    - if-else: if one condition is false then the other condition will execute.
+            syntax:  if condition1:
+                        code block1
+                    else: 
+                        code block2
+    - elif is the extended if-else statement.
+            syntax: if condition1:
+                            code block
+                    elif condition2:
+                            code block
+                    else:
+
+comparison operator
+-------------------
+    - "==" -> if the value is equal to given value it will return True else false.
+    - "!=" --> Not equals to 
+    - ">=" 
+    - "<="
+    - ">"
+    - "<"
+    
+
+Joining condition 
+-----------------
+    - we can use and,or, not in the if-else statements
+    
+    ex: if num>50 and num<100:
+                    code block
+            elif num>50 or num<100:
+                    code block
+            elif not num>50:
+                print("The number is not greater")
+
+
+Membership operator
+-----------------
+    ex:  lst=["a","b","c]
+
+        if "a" in lst:
+                print("a is present in the list")
+
+Ternary operator
+----------------
+    - It is the shortest way of writing if-else statement.
+
+    syntax:   value_if_true if condition else value_if_false
+
+                   
+Match case statements 
+--------------------
+    - It is similar to the switch case in c/java.
+    - where a match keyword followed by parameter and various cases.
+    Syntax: 
+    match parameter:
+        case value1:
+                code block
+        case value2:
+            code block
+        case _:
+            default code block
+
+
+
+While loop (repetition)
+----------------------
+    - While loop is used to repeatably execute a set of statements until a condition is met.
+    - Syntax:
+            while condition:
+                    code block
+
+    - In python we can add else block after the while block.
+    - Syntax:
+            while condition:
+                    code block
+            else:
+                code block
+
+
+break keyword
+-------------
+    - break keyword is used to break the current loop which means used to come out the loop.
+    - Syntax:
+        while True:
+            if a==3:
+            break
+continue keyword
+----------------
+    - This keyword is used to skip the execution of statements after the keyword. 
+    - Syntax:
+        a=1
+        while a<5:
+            if a%2==0:
+                continue
+            print(a)
+
+For loop
+--------
+    - For loop is used for iterating over the sequence data (list,tuple,string) or other iterable object. 
+
+    - syntax:  for i in list:
+                    print(i)
+
+                for i in range(0,n,step):
+                        print(i)    

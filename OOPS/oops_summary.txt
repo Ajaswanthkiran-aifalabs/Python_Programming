@@ -1,0 +1,148 @@
+
+
+Classes 
+-------
+        - Class is a template or are user defined blue print or a prototype that helps to create a object.
+                ex:  we have resume template where each user can modify the template with there own details.
+                        where the template is the class and the each user template is object.
+        - It is a logical entity which contains attributes and functions.
+
+        - A class is created using a keyword class followed by name and colon.
+
+                syntax:  class className:
+                        #body of class 
+        - There are some built-in attributes and method.
+        - __init__ method is similar to a constructor. Using this method we can pass the values of the attributes at object instantiation.
+        - property() function inside the class can add some functionalities. The function takes get,set, and delete methods as arguments and return
+                as object. This can be used for data Encapsulation also.
+
+object
+-----
+        - Objects are the instance of a particular class. 
+        - A object is an entity that has a state and behavior associated with it.
+        - The process of creating an object is called instantiation.
+
+        - An object consist of  
+                - state:- The state of the object is determined by the attributes of the object.
+                - behavior:- by methods
+                - identity:- Having unique name to each object.
+
+Python self
+-----------
+        - For each method in the class the first parameter is self the user does not provide the self parameter. python provides it. 
+
+                ex:   if a user called a method   ajk.addDetails("ajk",20)  --> here ajk is an object for the class Details.
+                        this is automatically converted by the python to ajk.addDetails(ajk,"ajk", 20)
+
+Inheritance
+-----------
+- Inheritances is the capability of one class access or inherit the properties of other class. 
+- The class which derives the properties is called as derived class or child class.
+- The class in which the properties are being derived is called as base class.
+
+        Advantages
+        ----------
+        - It represents real world relationship.
+        - It is transitive in nature.
+        - It provide code reusability.
+
+        - There are 5 types of Inheritance in python
+                - single level : one base class and one derived class.
+                - Multi level: class A is inherited by class B and class B is inherited by class C.
+                - Multiple: two or more base class and one derived class.
+                - Hierarchical: one base class multiple derived classes.
+                - Hybrid: combination of both multiple and hierarchical.
+
+        Special functions
+        -----------------       
+        - super():- Used for calling the base class methods form the derived class.
+        - issubclass():- check if the class is the child of the parent class.
+        - isinstance():- check whether the object is an instance of a particular class or any other subclass of the derived class.
+
+
+
+
+Encapsulation
+------------
+- Wrapping both data members and member function in to a single unit.
+- It is used for data hiding. It prevents data modifications accidentally by limiting access to the Variables and methods.
+- Encapsulation is done using Access Modifiers.
+- Access Modifiers provide restriction over the data that a user can access.
+- There are three types of access modifiers.
+        - Protected : The data can be accessed with in the class and by the derived class where the value name prefix should be started
+                        with an underscore("_").
+        - Private: similar to protected but can't be accessed out side the base class and name prefix should be started with two underscore
+                        ("__").
+        - Public
+
+Polymorphism 
+------------
+- Ploy means many 
+- Morph means forms
+- Polymorphism means many forms.
+- In programming polymorphism means same function name being used for different types. The key difference is data type and number of 
+        arguments used in the function.
+- Polymorphism are two types 
+        - compile time: Method overriding
+        - run time: Method Overloading
+
+
+
+Data Abstraction
+----------------
+- Abstraction in oops used for hiding the internal functionality of the class from the user.
+- The process by which data and function are defined in such a way that only essential details can be seen and unnecessary implementation       
+        are hidden is know as data Abstraction.
+
+- The Module we use to create a Abstract class in python is "abc" (Abstract base class).
+- A Abstract method should be overridden by the child class.
+- A class containing one or more abstract methods is know as abstract class.
+
+        Syntax: from abc import abc
+                class <Abstract_class_name>(ABC):
+                        body of the class
+
+- To define a abstract method we use the @abstractmethod decorator from the abc module. It tells the python the method is a abstract method
+        and should be overridden by the child class.
+ 
+        Syntax:     from abc import ABC, abstractmethod
+                
+                class AbstractClass(ABC):
+                        @abstractmethod
+                        def <method_name>(self,other parms):
+                                pass
+
+- In abstract class there can be two methods concrete methods and abstract methods. 
+        - The concrete methods can be used as it is in child class
+        - The abstract methods methods of the parent class should be implemented in the child class. 
+
+
+operator overloading 
+--------------------
+- Operator overloading means giving extended meaning beyond their predefined operational meaning.
+- To overload we need to do changes in the magic method like for "+"  --> __add__(self)
+
+
+iterable classes
+----------------
+- to be an iterable it should implement __iter__() and __next__().
+- To create a class as an iterable we need to implement the methods __iter__() and __next__()
+
+- code at iterable_class_exp.py
+
+Casting Type
+------------
+- Here we can aslo use built-in class as custom class also.
+
+ex: def __int__(self):
+        
+
+class __repr__
+--------------
+-> reper stands for representation.
+-  if we try to print the object that is a representation if we want to change the representation we __repr__() method.
+
+
+Sentinels 
+--------
+- A data or class which does not hold a value like None.
