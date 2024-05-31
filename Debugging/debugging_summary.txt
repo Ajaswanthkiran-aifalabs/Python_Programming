@@ -1,0 +1,22 @@
+
+
+Base except statement
+--------------------
+In try except we can write as
+  try:
+    code block
+  except: --> If we did not mention Exception then it will cath all exception even from the system level so in order to catch only python
+                exception we have to mention Exception
+    code block
+except Exception as e: --> If we want to print the exception then we have to use this
+
+
+assert
+------
+- It is used to check whether the code if true or false.
+- If false it will raise an AssertionError which stop the execution of the program.
+
+
+Logging module
+-------------
+- we can use if in place of print statement for displaying debug mssg or error mssg.

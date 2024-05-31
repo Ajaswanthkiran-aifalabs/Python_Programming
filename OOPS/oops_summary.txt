@@ -13,8 +13,8 @@ Classes
                         #body of class 
         - There are some built-in attributes and method.
         - __init__ method is similar to a constructor. Using this method we can pass the values of the attributes at object instantiation.
-        - property() function inside the class can add some functionalities. The function takes get,set, and delete methods as arguments and return
-                as object. This can be used for data Encapsulation also.
+        - property() function inside the class can add some functionalities. The function takes get,set, and delete methods as arguments 
+        and return as object. This can be used for data Encapsulation also.
 
 object
 -----
@@ -77,15 +77,15 @@ Encapsulation
 
 Polymorphism 
 ------------
-- Ploy means many 
-- Morph means forms
-- Polymorphism means many forms.
+- Ploy means many, Morph means forms,Polymorphism means many forms.
 - In programming polymorphism means same function name being used for different types. The key difference is data type and number of 
         arguments used in the function.
 - Polymorphism are two types 
         - compile time: Method overriding
-        - run time: Method Overloading
+        - run time: Method Overloading  
 
+- in python we can achieve method overloading using default parameters ot multidispather   where importing dispatch.
+- exp: function_overloading.py
 
 
 Data Abstraction
@@ -125,21 +125,21 @@ operator overloading
 
 iterable classes
 ----------------
-- to be an iterable it should implement __iter__() and __next__().
+- To be an iterable it should implement __iter__() and __next__().
 - To create a class as an iterable we need to implement the methods __iter__() and __next__()
 
 - code at iterable_class_exp.py
 
 Casting Type
 ------------
-- Here we can aslo use built-in class as custom class also.
+- Here we can also use built-in class as custom class also.
 
 ex: def __int__(self):
         
 
 class __repr__
 --------------
--> reper stands for representation.
+-> repr stands for representation.
 -  if we try to print the object that is a representation if we want to change the representation we __repr__() method.
 
 

@@ -27,3 +27,9 @@ Error handling or Exception handling
             
         - user defined exception class should be created.
         
+
+assert
+------
+- It is used to check whether the code if true or false.
+- If false it will raise an AssertionError which stop the execution of the program.
+
