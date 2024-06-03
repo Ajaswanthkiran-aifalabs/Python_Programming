@@ -27,7 +27,21 @@ class LinkedList:
                 current_node=current_node.next
             
             current_node.next=new_node
-    
+    def reverse(self):
+        curr=self.head
+        prev=next=None
+
+        if curr is None:
+            return None
+        
+        while curr:
+            next=curr.next
+            curr.next=prev
+            prev=curr
+            curr=next
+        self.head=prev
+
+
     def insert_at_beginning(self,value):
         new_node=Node(value)
 
@@ -193,6 +207,10 @@ def main():
 
     l.search(543)
 
+
+    l.reverse()
+
+    l.display()
 
 
     
