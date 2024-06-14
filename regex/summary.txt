@@ -1,0 +1,26 @@
+
+
+Regex
+-----
+- A Regex or Regular Expression is a sequence of characters that forms a search pattern.
+- It s used to check whether the string contains the specified search ring pattern. 
+
+- In python we re module where we can perform different functions.
+
+- The Regex functions are
+    - findall :- return the list containing all matches.
+    - search :- it return a match object if there is a match anywhere in the string.
+    - split :- Return a list where the string has been split  at each match.
+    - sub :- Replace one or more matches with the string.
+
+- Meta characters 
+    - []  - A set of characters
+    - ^   - start with 
+    - $   - end with 
+    - {}  - specific number of characters
+    - .   - Any character
+    - *   - zero or more occurrence 
+    - +   - one or more occurrence
+    - ?   - zero or one occurrence
+    - |  - either or 
+

@@ -1,25 +1,24 @@
 
 
-class Exp:
+def decfunc(f):
 
-    def __init__(self,value=0):
-        self._value=value
 
-    @property
-    def valuefunc(self):
-        return self._value
+    def efunc(value):
+       
+        print(value)
+       
+    return efunc
     
 
-    @valuefunc.setter
-    def valuefunc(self,value):
-        self._value=value
 
 
 
-c=Exp()
+@decfunc
+def func(value):
+    print("-----In actual function-------")
 
-print(c.valuefunc)
 
-c.valuefunc=49
 
-print(getattr(c,"_value"))
+
+
+func(10)

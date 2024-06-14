@@ -9,17 +9,17 @@ def main_next():
 
     print(next(c))
     print(next(c))
+
+
 def main():
 
-    for i in count(0,10):
+    for i in count(0):
 
         if i>100:
             break
 
         print("Heehee ",i)
 
-
-    
 
 if __name__=="__main__":
     print(__name__)

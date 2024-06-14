@@ -29,7 +29,7 @@ itertools Module
         elements. It takes an iterable object and group_size. if the group_size is not given it takes the length of the iterable.
         - combinations(): -  it prints all the possible combination of the iterable without replacement. It takes an iterable object and 
         group_size. if the group_size is not given it takes the length of the iterable.
-        - combination_with_replacement(): - It is similar to the combination but it may include the individual element itself.
+        - combination_with_replacement(): - I t is similar to the combination but it may include the individual element itself.
         it takes iterable and group_size.
 
     - Terminating iterator 
@@ -46,7 +46,7 @@ itertools Module
         - starmap(func,tuple list):- it takes two arguments a func and a list of tuples and based on the function it gives the output.
         - takewhile():- it is vise-versa of dropwhile.
         
-
+        
 
 
 
